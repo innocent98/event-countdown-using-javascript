@@ -12,7 +12,7 @@ let newYear = "1 jan 2023";
 
 submit.addEventListener("click", (e) => {
   e.preventDefault()
-  occasionTitle.innerHTML = `Your Next ${title.value} is`;
+  occasionTitle.innerHTML = `Your Next ${title.value} is in`;
   newYear = date.value;
   console.log(date.value)
 });
