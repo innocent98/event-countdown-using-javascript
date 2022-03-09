@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>timer</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="container">
+        <div class="title" id="occasionTitle">Until Next Event</div>
+        <div class="timer">
+          <div class="event">
+            <div class="time" id="days"></div>
+            <div class="cat">days</div>
+          </div>
+
+          <div class="event">
+            <div class="time" id="hours"></div>
+            <div class="cat">hours</div>
+          </div>
+
+          <div class="event">
+            <div class="time" id="mins"></div>
+            <div class="cat">mins</div>
+          </div>
+
+          <div class="event">
+            <div class="time" id="secs"></div>
+            <div class="cat">sec</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="entries">
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="title" class="form-label">Enter Next Event Title</label>
+          <input type="text" class="form-control" id="title" placeholder="my birthday" />
+        </div>
+        <div class="col-md-4">
+          <label for="date" class="form-label">Enter Event Date</label>
+          <input type="date" class="form-control" id="date" />
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-primary" id="submit">Check</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
