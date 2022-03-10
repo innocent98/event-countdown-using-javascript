@@ -14,7 +14,6 @@ submit.addEventListener("click", (e) => {
   e.preventDefault()
   occasionTitle.innerHTML = `Your Next ${title.value} is in`;
   newYear = date.value;
-  console.log(date.value)
 });
 
 function countDown() {
