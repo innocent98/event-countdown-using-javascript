@@ -6,14 +6,15 @@ const secs = document.getElementById("secs");
 const occasionTitle = document.getElementById("occasionTitle");
 const title = document.getElementById("title");
 const date = document.getElementById("date");
-const submit = document.getElementById("submit");
+// const submit = document.getElementById("submit");
 
 let newYear = "1 jan 2023";
 
-submit.addEventListener("click", (e) => {
+date.addEventListener("change", (e) => {
   e.preventDefault()
   occasionTitle.innerHTML = `Your Next ${title.value} is in`;
   newYear = date.value;
+  title.value = ""
 });
 
 function countDown() {
