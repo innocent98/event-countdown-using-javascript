@@ -15,6 +15,7 @@ member.addEventListener("submit", async (e) => {
 
   const formData = new FormData(member);
   const data = Object.fromEntries(formData);
+
   try {
     fetch("https://forezon-api.herokuapp.com/api/user/bootcamp-register", {
       method: "POST",
