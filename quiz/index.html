@@ -9,34 +9,36 @@
   </head>
   <body>
     <div class="body">
-      <div class="container">
+      <div class="container" id="quiz">
         <form action="" class="quiz">
           <div class="quest" id="question">What is your age?</div>
-          <ul class="quetion">
+          <ul class="question">
             <li class="ans">
-              <input type="radio" name="answer" id="a" />
-              <label for="a" id="aAnswer">20</label>
+              <input type="radio" name="answer" class="answer" id="a" />
+              <label for="a" id="aAnswer" class="label">20</label>
             </li>
 
             <li class="ans">
-              <input type="radio" name="answer" id="b" />
-              <label for="b" id="bAnswer">10</label>
+              <input type="radio" name="answer" class="answer" id="b" />
+              <label for="b" id="bAnswer" class="label">10</label>
             </li>
 
             <li class="ans">
-              <input type="radio" name="answer" id="c" />
-              <label for="c" id="cAnswer">15</label>
+              <input type="radio" name="answer" class="answer" id="c" />
+              <label for="c" id="cAnswer" class="label">15</label>
             </li>
 
             <li class="ans">
-              <input type="radio" name="answer" id="d" />
-              <label for="d" id="dAnswer">18</label>
+              <input type="radio" name="answer" class="answer" id="d" />
+              <label for="d" id="dAnswer" class="label">18</label>
             </li>
           </ul>
 
           <button class="submit" id="submit">Next</button>
         </form>
       </div>
+
+      <div class="timer" id="timer"></div>
     </div>
 
     <script src="script.js"></script>

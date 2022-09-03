@@ -1,42 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.body{
-    height: 100vh;
-    width: 100%;
-    background-color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.body {
+  height: 100vh;
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container{
-    width: 20rem;
-    height: 20rem;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.1);
+.container {
+  width: auto;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  border-radius: 4px;
 }
 
-.quest{
-    margin-bottom: 30px;
-    font-weight: bold;
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.quetion{
-    list-style: none;
+.quest {
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
-.submit{
-    margin-top: 10px;
-    width: 80%;
-    height: 30px;
-    background-color: aqua;
-    color: white;
-    border: none;
+.question {
+  list-style: none;
+  text-align: left;
+}
+
+.answer,
+.label {
+  cursor: pointer;
+}
+
+.submit {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+}
+
+.timer {
+  background-color: purple;
+  color: beige;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
 }

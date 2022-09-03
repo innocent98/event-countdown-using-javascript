@@ -29,6 +29,7 @@ body{
 
 .title{
     font-size: 2rem;
+    text-align: center;
 }
 
 .timer{
@@ -50,11 +51,18 @@ body{
 }
 
 .entries{
-    margin-top: -150px;
+    margin-top: -250px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 50px;
+}
+h4{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .row{

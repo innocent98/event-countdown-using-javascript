@@ -6,15 +6,33 @@ const secs = document.getElementById("secs");
 const occasionTitle = document.getElementById("occasionTitle");
 const title = document.getElementById("title");
 const date = document.getElementById("date");
-// const submit = document.getElementById("submit");
+const member = document.getElementById("member-form");
 
-let newYear = "1 jan 2023";
+let newYear = "15 sept 2022";
+
+member.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(member);
+  const data = Object.fromEntries(formData);
+  try {
+    fetch("https://forezon-api.herokuapp.com/api/user/bootcamp-register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => alert(data));
+  } catch (error) {}
+});
 
 date.addEventListener("change", (e) => {
-  e.preventDefault()
+  e.preventDefault();
   occasionTitle.innerHTML = `Your Next ${title.value} is in`;
   newYear = date.value;
-  title.value = ""
+  title = title.value;
 });
 
 function countDown() {
