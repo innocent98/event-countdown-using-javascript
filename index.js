@@ -8,7 +8,7 @@ const title = document.getElementById("title");
 const date = document.getElementById("date");
 const member = document.getElementById("member-form");
 
-let newYear = "15 sept 2022";
+let newYear = "1 jan 2023";
 
 member.addEventListener("submit", async (e) => {
   e.preventDefault();
